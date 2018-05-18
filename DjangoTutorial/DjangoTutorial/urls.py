@@ -13,6 +13,8 @@ urlpatterns = [
     # Examples:
     url(r'^$', FirstApp.views.index, name='index'),
 	url(r'^home$', FirstApp.views.index, name='home'),
+	url(r'^about$', FirstApp.views.about, name='about'),
+
     # url(r'^DjangoTutorial/', include('DjangoTutorial.DjangoTutorial.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

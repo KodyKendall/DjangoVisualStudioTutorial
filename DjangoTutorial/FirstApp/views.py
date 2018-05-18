@@ -14,3 +14,13 @@ def index(request):
 			'message' : "Welcome to your first Django App"
 		}
 	)
+
+def about(request):
+	return render(
+		request,
+		"FirstApp/about.html",
+		{
+			'title' : "About HelloDjangoApp",
+			'content' : "Example app page for Django."
+		}
+	)

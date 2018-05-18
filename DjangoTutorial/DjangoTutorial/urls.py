@@ -3,6 +3,7 @@ Definition of urls for DjangoTutorial.
 """
 
 from django.conf.urls import include, url
+import FirstApp.views
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -10,7 +11,8 @@ from django.conf.urls import include, url
 
 urlpatterns = [
     # Examples:
-    # url(r'^$', DjangoTutorial.views.home, name='home'),
+    url(r'^$', FirstApp.views.index, name='index'),
+	url(r'^home$', FirstApp.views.index, name='home'),
     # url(r'^DjangoTutorial/', include('DjangoTutorial.DjangoTutorial.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
